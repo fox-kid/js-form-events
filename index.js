@@ -6,6 +6,12 @@ const form = document.querySelector("form");
 const select = document.getElementById("stateSelect");
 let state = select.options[select.selectedIndex].value;
 
+// If there is a saved value of state in local storage, it will just set the select value from it;
+// I moved it before window.onload because the select would change its state with delay in that case
+
+let savedState = localStorage.getItem("state");
+savedState ? select.value = savedState : state;
+
 
 // Check local storage on window's load/reload and set inputs values
 // accordingly if they are not empty
@@ -13,11 +19,9 @@ let state = select.options[select.selectedIndex].value;
 window.onload = () => {
     let titleValue = localStorage.getItem("title");
     let contentValue = localStorage.getItem("content");
-    let stateValue = localStorage.getItem("state", state);
 
     title.value = titleValue;
     content.value = contentValue;
-    state = stateValue; // TODO
 }
 
 // Reset button styles on hover (mouseover & mouseout)
