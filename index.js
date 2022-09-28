@@ -31,12 +31,12 @@ window.onload = () => {
 // Reset button styles on hover (mouseover & mouseout)
 
 resetBtn.addEventListener("mouseover", () => {
-    resetBtn.style.setProperty("background-color", "#f8efef");
+    resetBtn.style.setProperty("background-color", "#5a8947");
     resetBtn.style.setProperty("box-shadow", "0px 2px 8px 2px rgb(72 74 72 / 30%)")
 })
 
 resetBtn.addEventListener("mouseout", () => {
-    resetBtn.style.setProperty("background-color", "#ffffff")
+    resetBtn.style.setProperty("background-color", "#71a95a")
     resetBtn.style.setProperty("box-shadow", "0px 2px 6px 2px rgb(72 74 72 / 30%)")
 })
 
@@ -44,12 +44,12 @@ resetBtn.addEventListener("mouseout", () => {
 // Submit button styles on hover (mouseover & mouseout)
 
 submitBtn.addEventListener("mouseover", () => {
-    submitBtn.style.setProperty("background-color", "rgb(27 167 27)");
+    submitBtn.style.setProperty("background-color", "#5a8947");
     submitBtn.style.setProperty("box-shadow", "0px 2px 8px 2px rgb(72 74 72 / 30%)")
 })
 
 submitBtn.addEventListener("mouseout", () => {
-    submitBtn.style.setProperty("background-color", "rgb(30, 188, 30)")
+    submitBtn.style.setProperty("background-color", "#71a95a")
     submitBtn.style.setProperty("box-shadow", "0px 2px 6px 2px rgb(72 74 72 / 30%)")
 })
 
