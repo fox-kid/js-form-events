@@ -6,9 +6,6 @@ const form = document.querySelector("form");
 const select = document.getElementById("stateSelect");
 let state = select.options[select.selectedIndex].value;
 
-// // Save state as default value in local storage just in case a person doesn't click on it to pick
-
-// localStorage.setItem("state", state)
 
 // If there is a saved value of state in local storage, it will just set the select value from it;
 // I moved it before window.onload because the select would change its state with delay in that case
